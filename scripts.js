@@ -6,8 +6,7 @@ const veggyday= new Date('2022-03-22');
 const today = new Date();
 
 let day = weekday[today.getDay()];
-var time_difference = today.getTime() - veggyday.getTime();   
-var days_difference = Math.ceil (time_difference / (1000 * 60 * 60 * 24));  
+var days_difference = today.getDate() - veggyday.getDate();   
 
 if(!possibledays.includes(day))
     document.getElementById('answer').innerHTML = "NO";
