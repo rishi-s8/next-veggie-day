@@ -1,12 +1,14 @@
-
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const possibledays = ["Monday","Tuesday","Thursday"]
 
 const veggyday= new Date('2022-03-22');
+veggyday.setHours(0,0,0);
 const today = new Date();
+today.setHours(0,0,0);
 
 let day = weekday[today.getDay()];
-var days_difference = today.getDate() - veggyday.getDate();   
+var time_difference = today.getTime() - veggyday.getTime();   
+var days_difference = Math.ceil(time_difference / (1000 * 60 * 60 * 24));  
 
 if(!possibledays.includes(day))
     document.getElementById('answer').innerHTML = "NO";
@@ -20,4 +22,3 @@ else{
 }
 
 document.getElementById('date').innerHTML = today;
-
