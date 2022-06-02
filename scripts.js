@@ -1,7 +1,7 @@
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const possibledays = ["Monday","Tuesday","Thursday"]
 
-const veggyday= new Date('2022-03-22');
+const veggyday= new Date('2022-06-07');
 veggyday.setHours(0,0,0);
 const today = new Date();
 today.setHours(0,0,0);
