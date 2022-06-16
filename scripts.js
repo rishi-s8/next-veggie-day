@@ -8,7 +8,7 @@ today.setHours(0,0,0);
 
 let day = weekday[today.getDay()];
 var time_difference = today.getTime() - veggyday.getTime();   
-var days_difference = Math.ceil(time_difference / (1000 * 60 * 60 * 24));  
+var days_difference = Math.round(time_difference / (1000 * 60 * 60 * 24));  
 
 if(!possibledays.includes(day))
     document.getElementById('answer').innerHTML = "NO";
