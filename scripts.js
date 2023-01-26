@@ -14,7 +14,7 @@ if(!possibledays.includes(day))
     document.getElementById('answer').innerHTML = "NO";
 else{
     if((day === "Thursday" && (days_difference-17)%21 === 0 ) 
-    || (day === "Monday" && (days_difference-)%21 === 0 )
+    || (day === "Monday" && (days_difference)%21 === 0 )
     || (day === "Tuesday" && (days_difference-8)%21=== 0 ))
         document.getElementById('answer').innerHTML = "YES";
     else
