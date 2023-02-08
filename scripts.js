@@ -7,7 +7,7 @@ veggyday.setHours(0,0,0);
 var day
 
 for (let i = 0; i < 21; i++) {
-    var this_day = new Date('2023-01-27');
+    var this_day = new Date();
     this_day.setDate(this_day.getDate() + i);
     this_day.setHours(0,0,0);
     
@@ -23,10 +23,10 @@ for (let i = 0; i < 21; i++) {
     }
 }
 
-const today = new Date('2023-01-27')
+const today = new Date()
 today.setHours(0,0,0);
 const today_day = weekday[today.getDay()]
-const tomorrow = new Date('2023-01-27')
+const tomorrow = new Date()
 tomorrow.setHours(0,0,0);
 tomorrow.setDate(tomorrow.getDate() + 1)
 const tomorrow_day = weekday[tomorrow.getDay()]
